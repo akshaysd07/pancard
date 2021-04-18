@@ -17,7 +17,7 @@
       </style>
 </head>
 <body style="background-color:wheat ;">
-    <form action="">
+    <form action="" method="POST">
         <div style="display: inline;">    
     <table ><tr>
     <th colspan="5"  style="background-color: brown;width:100%">
@@ -27,8 +27,8 @@
         <tr >
             <td colspan="1"></td>
             <td colspan="4"> <span style="color: red;">*</span> whether citizen of india
-                Yes<input type="radio" name="yes" id="">
-                No<input type="radio" name="no" id="">
+             <label for="Yes">Yes</label> <input type="radio" id="Yes" name="citizen" value="Yes">
+              <label for="No">No</label>  <input type="radio" id="No" name="citizen" value="No">
             </td>
             </tr>
             <tr><td></td>
@@ -42,13 +42,17 @@
             <td ><input type="checkbox" name="" id=""></td>
             <td colspan="4"><span style="color: red;">*</span> 1.Name</td>
         </tr>
-        <tr>
-            <td></td>
+        <tr> 
+            <td></td>   
         <td colspan="4">
-            <b>Title</b> 
-            Shri/Mr<input type="radio" name="" id="">
-            Smt/Mrs<input type="radio" name="" id="">
-            Kumari/Ms<input type="radio" name="" id="">
+            <b>Title</b> &nbsp;&nbsp;
+            
+  <label for="male">Shri/Mr</label><input type="radio" id="Shri/Mr" name="gender" value="Shri/Mr">
+  <label for="female">Smt/Mrs</label><input type="radio" id="Smt/Mrs" name="gender" value="Smt/Mrs">
+  
+  <label for="other">Kumari/Ms</label><input type="radio" id="Kumari/Ms" name="gender" value="Kumari/Ms">
+  
+            
         </td>
         </tr>
         <tr><td></td>
@@ -81,7 +85,9 @@
        <tr><td></td><td colspan="5">  Details Of parents<s1>(prefix like Shri,Smt,Kumari,
         Late,Dr,CA,Ms,Mr,Mrs,Alias are not allowed)</s1></td></tr>
        <tr><td></td><td colspan="3">Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</td>
-    <td colspan="2">YES<input type="radio" name="" id=""> NO<input type="radio" name="" id=""></td></tr>
+    <td colspan="2">
+        <label for="Yes">Yes</label><input type="radio" id="Yes" name="Ans" value="Yes"> 
+        <label for="No">No</label> <input type="radio" id="No" name="Ans" value="No"></td></tr>
     <tr>
         <td><input type="checkbox" name="" id=""></td>
         <td colspan="4"><span style="color: red;">*</span> Father's Name<s1>(Mandatory field.Even married women should give father's name only.)</s1></td></tr>
@@ -111,8 +117,10 @@
             <tr><td></td>
                 <td colspan="3"><span style="color: red;">*</span> 4.Select parent name which is to be printed on card<br>
                 (in case no option provided PAN card will be issued with father's name)</td>
-                <td colspan="2">Father name<input type="radio" name="" id="">
-                    Mother name <input type="radio" name="" id="">
+                <td colspan="2">
+    <label for="male">Father name</label><input type="radio" id="Father name" name="gender" value="Father name">
+    <label for="female">Mother name</label><input type="radio" id="Mother name" name="gender" value="Mother name">                   
+ 
                 </td>
             </tr>
             <tr>
@@ -127,17 +135,17 @@
                  <tr>
                         <td colspan="1"><input type="checkbox" name="" id=""></td>
                         <td colspan="2"><span style="color: red;">*</span> 6.Gender</td>
-                        <td colspan="2">Male<input type="radio" name="" id="">
-                            Female <input type="radio" name="" id="">
-                            Transgender <input type="radio" name="" id="">
+                        <td colspan="2">Male<input type="radio" name="gender" id="">
+                            Female <input type="radio" name="gender" id="">
+                            Transgender <input type="radio" name="gender" id="">
                         </td>
                  </tr>
                  <tr><td ><input type="checkbox" name="" id=""></td><td colspan="5">7.Photo Mismatch</td></tr>
                  <tr><td><input type="checkbox" name="" id=""></td><td colspan="5">8.Signature Mismatch</td></tr>
                  <tr><td><input type="checkbox" name="" id=""></td>
                     <td colspan="2"><span style="color: red;">*</span>9.Address for communication</td>
-                    <TD colspan="3">Office <input type="radio" name="" id="">
-                        Residential <input type="radio" name="" id="">
+                    <TD colspan="3">Office <input type="radio" name="address" id="">
+                        Residential <input type="radio" name="address" id="">
                     </TD></tr>
                     <tr><td></td><td colspan="2">Office Name(to be filled only in case of Office)</td>
                     <td colspan="2"><input type="text" name="" id=""></td>
@@ -300,8 +308,8 @@
                             
                     </tr>
                     <tr>
-                        <td colspan="1"><input type="checkbox" name="Mobile Number">Mobile Number</td>
-                        <td colspan="1"><input type="checkbox" name="telephone">Telephone Number</td>
+                        <td colspan="1"><input type="radio" name="contact">Mobile Number</td>
+                        <td colspan="1"><input type="radio" name="contact">Telephone Number</td>
                     </tr>
                     <tr>
                         <td>Area/STD Code <br><input type="text" name="std code" id=""></td>
@@ -313,8 +321,8 @@
                     </tr>
 
                     <tr><td></td><td colspan="2">In case of citizen of India , then</td>
-                        <td colspan="2"><input type="radio" name="ashar" id="">AADHAR
-                            <input type="radio" name="EID" id="">EID
+                        <td colspan="2"><input type="radio" name="proof" id="">AADHAR
+                            <input type="radio" name="proof" id="">EID
                         </td>
                         </tr>
                         <tr><td></td>
@@ -383,8 +391,8 @@
                         </tr>
                         <tr><td></td>
                             <td colspan="5"><p>Whether you wish to have? 
-                                <input type="radio" name="" id=""> Physical PAN Card & e-PAN card
-                                <input type="radio" name="" id=""> only e-PAN Card
+                                <input type="radio" name="123" id=""> Physical PAN Card & e-PAN card
+                                <input type="radio" name="123" id=""> only e-PAN Card
                                 <u>Fees Applicable</u>
                             </p></td>
                         </tr>
